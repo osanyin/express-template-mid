@@ -1,0 +1,8 @@
+{
+    "type": "mysql",
+    "host": "db",
+    "port": 5432,
+    "username": "diogenes",
+    "password": "diogenes",
+    "database": "diogenes"
+}

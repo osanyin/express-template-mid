@@ -17,7 +17,10 @@
         "errorhandler": "^1.5.1",
         "express": "^4.17.1",
         "morgan": "^1.9.1",
+        "pg": "^7.12.1",
+        "reflect-metadata": "^0.1.13",
         "ts-node-dev": "^1.0.0-pre.42",
+        "typeorm": "^0.2.18",
         "typescript": "^3.5.3"
     },
     "devDependencies": {

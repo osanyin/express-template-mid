@@ -8,7 +8,7 @@ import { createConnection } from "typeorm"
 import routes from "./routes"
 
 async function bootstrapApp() {
-    const port = process.env.PORT || 8080
+    const port = process.env.PORT || 3000
     const app: express.Application = express()
 
     if (app.get("env") === "development") {
@@ -28,4 +28,4 @@ async function bootstrapApp() {
 
 createConnection()
     .then(bootstrapApp)
-    .catch(error => console.log(error))
+    .catch(error => console.log("Database connection error: ", error))

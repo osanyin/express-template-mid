@@ -7,11 +7,11 @@
     "database": "diogenes",
     "synchronize": true,
     "entities": ["db/entities/*.js"],
-    "migrations": ["src/migrations/*.js"],
-    "subscribers": ["src/subscribers/*.js"],
+    "migrations": ["db/migrations/*.js"],
+    "subscribers": ["db/subscribers/*.js"],
     "cli": {
         "entitiesDir": "db/entities",
-        "migrationsDir": "src/migrations",
-        "subscribersDir": "src/subscribers"
+        "migrationsDir": "db/migrations",
+        "subscribersDir": "db/subscribers"
     }
 }

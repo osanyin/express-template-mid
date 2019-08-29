@@ -16,7 +16,7 @@ services:
   db:
     image: postgres:10.4
     ports:
-      - "35432:5432"
+      - "5432:5432"
     environment:
       POSTGRES_USER: diogenes
       POSTGRES_PASSWORD: diogenes

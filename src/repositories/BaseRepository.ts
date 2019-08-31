@@ -9,23 +9,23 @@ export default class BaseRepository<T> {
         this.repository = getRepository(type)
     }
 
-    async all(): Promise<T[]> {
+    all(): Promise<T[]> {
         return this.repository.find()
     }
 
-    async save(entity: T): Promise<T> {
+    save(entity: T): Promise<T> {
         return this.repository.save(entity)
     }
 
-    async update(entity: T): Promise<T> {
+    update(entity: T): Promise<T> {
         return this.repository.save(entity)
     }
 
-    async delete(id: number): Promise<DeleteResult> {
+    delete(id: number): Promise<DeleteResult> {
         return this.repository.delete(id)
     }
 
-    async find(id: number): Promise<T> {
+    find(id: number): Promise<T> {
         return this.repository.findOne(id)
     }
 }

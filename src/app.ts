@@ -28,4 +28,4 @@ async function bootstrapApp() {
 
 createConnection()
     .then(bootstrapApp)
-    .catch(error => console.log("Database connection error: ", error))
+    .catch(error => console.log("Error on starting the server: ", error))

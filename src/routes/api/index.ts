@@ -1,5 +1,5 @@
 import { Router, Request, Response, NextFunction } from "express"
-import { ValidationError, ErrorMessage } from "src/types/validation-errors"
+import { ValidationError, ErrorMessage } from "../../types/validation-errors"
 
 import usersRouter from "./users"
 

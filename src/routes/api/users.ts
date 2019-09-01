@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express"
-import UserRepository from "../../repositories/UserRepository"
+import { UserRepository } from "../../repositories/UserRepository"
 import { User } from "../../database/entities/User.entity"
 
 export async function show(req: Request, res: Response, next: NextFunction) {
